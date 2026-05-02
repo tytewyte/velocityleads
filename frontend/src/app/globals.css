@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #060813;
+  --bg-soft: #0b1233;
+  --fg: #e7f3ff;
+  --neon-cyan: #46f4ff;
+  --neon-violet: #9f69ff;
+  --neon-pink: #ff4ddb;
+}
+
+html,
+body {
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--fg);
+  background:
+    radial-gradient(circle at 20% 20%, rgba(70, 244, 255, 0.2), transparent 32%),
+    radial-gradient(circle at 80% 15%, rgba(255, 77, 219, 0.16), transparent 30%),
+    radial-gradient(circle at 50% 120%, rgba(159, 105, 255, 0.2), transparent 45%),
+    linear-gradient(135deg, var(--bg), var(--bg-soft) 45%, #04050a 100%);
+}
+
+.glow-card {
+  @apply border border-white/10 bg-white/5 backdrop-blur-xl shadow-[0_0_30px_rgba(70,244,255,0.12)];
+}
+
+.text-neon {
+  background: linear-gradient(90deg, var(--neon-cyan), #b8f9ff, var(--neon-violet));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.starfield::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.6) 0.5px, transparent 1px);
+  background-size: 3px 3px;
+  opacity: 0.08;
+  pointer-events: none;
+}

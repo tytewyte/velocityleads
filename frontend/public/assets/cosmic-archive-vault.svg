@@ -1,0 +1,27 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#04060F"/>
+  <g filter="url(#f0)">
+    <ellipse cx="801" cy="456" rx="420" ry="170" fill="#46F4FF" fill-opacity="0.16"/>
+  </g>
+  <g filter="url(#f1)">
+    <ellipse cx="800" cy="480" rx="280" ry="110" fill="#9F69FF" fill-opacity="0.2"/>
+  </g>
+  <path d="M400 670C520 560 1080 560 1200 670" stroke="#46F4FF" stroke-opacity="0.65" stroke-width="3"/>
+  <path d="M330 700C490 535 1110 535 1270 700" stroke="#9F69FF" stroke-opacity="0.55" stroke-width="2"/>
+  <rect x="530" y="360" width="540" height="260" rx="20" fill="url(#paint0_linear_2_1)" fill-opacity="0.32" stroke="#6FE9FF" stroke-opacity="0.5"/>
+  <rect x="760" y="430" width="80" height="120" rx="40" fill="#46F4FF" fill-opacity="0.3" stroke="#C2F9FF" stroke-opacity="0.6"/>
+  <circle cx="800" cy="488" r="18" fill="#C7FFFF"/>
+  <defs>
+    <filter id="f0" x="181" y="86" width="1240" height="740" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="100"/>
+    </filter>
+    <filter id="f1" x="340" y="230" width="920" height="500" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="90"/>
+    </filter>
+    <linearGradient id="paint0_linear_2_1" x1="530" y1="360" x2="1070" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#46F4FF"/>
+      <stop offset="0.53" stop-color="#243B8F"/>
+      <stop offset="1" stop-color="#9F69FF"/>
+    </linearGradient>
+  </defs>
+</svg>
