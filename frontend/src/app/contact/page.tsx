@@ -46,10 +46,11 @@ export default function ContactPage() {
       <section className="relative py-20 md:py-32 overflow-hidden">
         {/* Ambient glow */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <motion.div
+        // @ts-ignore
+        <motion.div
             animate={{
-              opacity: [0.1, 0.3, 0.1],
-              scale: [1, 1.1, 1],
+                opacity: [0.1, 0.3, 0.1],
+                scale: [1, 1.1, 1],
             }}
             transition={{ duration: 8, repeat: Infinity }}
             className="absolute top-0 right-1/4 h-96 w-96 rounded-full bg-violet-500/10 blur-3xl"

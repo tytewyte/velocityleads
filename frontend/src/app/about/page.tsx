@@ -28,19 +28,6 @@ export default function AboutPage() {
     },
   };
 
-  const particleVariants = {
-    hidden: { opacity: 0, scale: 0 },
-    visible: {
-      opacity: [0.1, 0.6, 0.1],
-      scale: [0.5, 1, 0.5],
-      transition: {
-        duration: 3,
-        repeat: Infinity,
-        ease: "easeInOut",
-      },
-    },
-  };
-
   return (
     <div className="w-full overflow-hidden bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
       {/* Hero Section */}
@@ -60,10 +47,17 @@ export default function AboutPage() {
           {[0, 1, 2, 3, 4].map((i) => (
             <motion.div
               key={`particle-origin-${i}`}
-              variants={particleVariants}
-              initial="hidden"
-              animate="visible"
-              transition={{ delay: i * 0.2 }}
+              initial={{ opacity: 0, scale: 0 }}
+              animate={{
+                opacity: [0.1, 0.6, 0.1],
+                scale: [0.5, 1, 0.5],
+              }}
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+                ease: "easeInOut",
+                delay: i * 0.2,
+              }}
               className="absolute rounded-full bg-cyan-300/20 blur-3xl"
               style={{
                 width: 200 + i * 50,
